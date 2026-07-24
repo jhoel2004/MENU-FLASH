@@ -1410,9 +1410,11 @@ body {
     /* Mobile: center cards and make them full-width */
     .items-grid {
         justify-content: center;
+        align-items: center;
         flex-wrap: wrap;
         scroll-snap-type: none;
         gap: 1rem;
+        min-height: 120px;
     }
 
     .menu-card {
@@ -1425,6 +1427,20 @@ body {
         width: 95%;
         max-width: 350px;
         margin: 0 auto;
+    }
+
+    /* When only 1-2 cards visible, center them in viewport */
+    .menu-section.search-active {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 50vh;
+        padding: 2rem 1rem;
+    }
+
+    .menu-section.search-active .section-header {
+        margin-bottom: 2rem;
     }
 }
 

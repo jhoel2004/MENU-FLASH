@@ -580,14 +580,33 @@ function initSearch() {
             }
         });
 
-        // Hide empty sections
+        // Hide empty sections + add search-active class
         sections.forEach(section => {
             const visibleCards = Array.from(section.querySelectorAll('.menu-card, .combo-card')).filter(card => card.style.display !== 'none');
             if (visibleCards.length === 0) {
                 section.style.display = 'none';
+                section.classList.remove('search-active');
             } else {
                 section.style.display = '';
+                section.classList.toggle('search-active', searchTerm.length > 0);
             }
         });
+
+        // Auto-scroll first visible card to center of viewport
+        if (searchTerm.length > 0) {
+            const visibleCards = Array.from(document.querySelectorAll('.menu-card, .combo-card'))
+                .filter(c => c.style.display !== 'none');
+            if (visibleCards.length > 0) {
+                setTimeout(() => {
+                    const firstCard = visibleCards[0];
+                    const cardRect = firstCard.getBoundingClientRect();
+                    const viewportHeight = window.innerHeight;
+                    const isMobile = window.innerWidth <= 768;
+                    const offset = isMobile ? 100 : 80;
+                    const targetY = cardRect.top + window.pageYOffset - (viewportHeight / 2) + (cardRect.height / 2) - offset;
+                    window.scrollTo({ top: Math.max(0, targetY), behavior: 'smooth' });
+                }, 100);
+            }
+        }
     });
 }
