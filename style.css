@@ -1407,40 +1407,35 @@ body {
         height: 110px;
     }
 
-    /* Mobile: center cards and make them full-width */
+    /* Mobile: horizontal scroll preserved */
     .items-grid {
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        scroll-snap-type: none;
+        scroll-snap-type: x mandatory;
         gap: 1rem;
         min-height: 120px;
     }
 
     .menu-card {
-        width: 90%;
-        max-width: 320px;
         scroll-snap-align: center;
     }
 
     .combo-card {
-        width: 95%;
-        max-width: 350px;
-        margin: 0 auto;
     }
 
-    /* When only 1-2 cards visible, center them in viewport */
+    /* When searching, center section vertically */
     .menu-section.search-active {
+        min-height: 50vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-        min-height: 50vh;
         padding: 2rem 1rem;
     }
 
     .menu-section.search-active .section-header {
         margin-bottom: 2rem;
+    }
+
+    .menu-section.search-active .items-grid {
+        justify-content: center;
     }
 }
 
@@ -1455,11 +1450,6 @@ body {
 
     .nav-links {
         gap: 1rem;
-    }
-
-    .menu-card {
-        width: 88%;
-        max-width: 300px;
     }
 
     .menu-card.text-only .card-content {
