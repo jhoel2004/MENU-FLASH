@@ -46,8 +46,8 @@
         { "name": "BLACK LABEL ", "price": "600 Bs", "image": "imagenes/black_label.png", "description": "12 años, notas de humo y vainilla" },
         { "name": "HABANA", "price": "400 Bs", "image": "imagenes/habana.png", "description": "Ron cubano de exportación" },
         { "name": "Tequila", "price": "350 Bs", "image": "imagenes/tequila.png", "description": "Destilado de agave 100%" },
-        { "name": "RON ABUELO", "price": "250 Bs", "image": "imagenes/ron_a.png", "description": "Ron panameño suave" },
-        { "name": "CASA REAL NEGRA ", "price": "250 Bs", "image": "imagenes/casa.png", "description": "Singani boliviano premium" },
+        { "name": "RON ABUELO", "price": "300 Bs", "image": "imagenes/ron_a.png", "description": "Ron panameño suave" },
+        { "name": "CASA REAL NEGRA ", "price": "300 Bs", "image": "imagenes/casa.png", "description": "Singani boliviano premium" },
         { "name": "FERNET", "price": "180 Bs", "image": "imagenes/f.png", "description": "Amargo italiano tradicional" },
         { "name": "RON SOLERA", "price": "350 Bs", "image": "imagenes/ron_sol.png", "description": "Añejado en barrica de roble" },
         { "name": "Jägermeister", "price": "350 Bs", "image": "imagenes/jjagger.png", "description": "Licor de hierbas alemán" }
