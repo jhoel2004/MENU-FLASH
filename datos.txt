@@ -1,0 +1,66 @@
+{
+  "logo": "imagenes/logo.png",
+  "categories": [
+    {
+      "id": "jarras",
+      "title": "Jarras",
+      "items": [
+        {
+          "name": "Combo 3 Jarras",
+          "price": "120 Bs",
+          "description": "Tres jarras para compartir con amigos. Elige entre Ron, Chuflay o Primavera.",
+          "isCombo": true,
+          "images": ["imagenes/ron.png", "imagenes/chuflai.png", "imagenes/primavera.png"],
+          "variants": ["Puro Ron", "Puro Chuflay", "Puro Primavera", "Mixto"]
+        },
+        {
+          "name": "Jarras Personales",
+          "price": "70 Bs",
+          "description": "Jarra individual preparada al momento con la receta de la casa.",
+          "isSlider": true,
+          "items": [
+             { "name": "Jarra de Ron", "image": "imagenes/ron.png", "description": "Ron cubano preparado con la receta de la casa" },
+             { "name": "Jarra de Chuflay", "image": "imagenes/chuflai.png", "description": "Cóctel tropical con ginger ale fresco" },
+             { "name": "Jarra de Primavera", "image": "imagenes/primavera.png", "description": "Mezcla frutal refrescante y exclusiva" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cervezas",
+      "title": "Cervezas",
+      "items": [
+        { "name": "Huari Par", "price": "60 Bs", "image": "imagenes/huari.png", "description": "Clásica cerveza boliviana, servida bien fría" },
+        { "name": "Burguesa", "price": "50 Bs", "image": "imagenes/burguesa.png", "description": "Sabor tradicional premium" },
+        { "name": "Corona", "price": "150 Bs", "image": "imagenes/corona.png", "description": "Cerveza mexicana importada, perfecta con limón" },
+        { "name": "Mini Huari", "price": "15 Bs", "image": "imagenes/mini.png", "description": "Formato personal, ideal para probar" },
+        { "name": "Caja Mini Huari", "price": "270 Bs", "image": "imagenes/caja_mini_huari.png", "description": "18 unidades para compartir toda la noche" }
+      ]
+    },
+    {
+      "id": "licores",
+      "title": "Tapados",
+      "items": [
+        { "name": "Old Parr ", "price": "650 Bs", "image": "imagenes/old_parr.png", "description": "Scotch whisky añejado, suave y aromático" },
+        { "name": "RED LABEL", "price": "400 Bs", "image": "imagenes/red_label.png", "description": "Blend clásico, versátil y reconocido" },
+        { "name": "BLACK LABEL ", "price": "600 Bs", "image": "imagenes/black_label.png", "description": "12 años, notas de humo y vainilla" },
+        { "name": "HABANA", "price": "400 Bs", "image": "imagenes/habana.png", "description": "Ron cubano de exportación" },
+        { "name": "Tequila", "price": "350 Bs", "image": "imagenes/tequila.png", "description": "Destilado de agave 100%" },
+        { "name": "RON ABUELO", "price": "250 Bs", "image": "imagenes/ron_a.png", "description": "Ron panameño suave" },
+        { "name": "CASA REAL NEGRA ", "price": "250 Bs", "image": "imagenes/casa.png", "description": "Singani boliviano premium" },
+        { "name": "FERNET", "price": "180 Bs", "image": "imagenes/f.png", "description": "Amargo italiano tradicional" },
+        { "name": "RON SOLERA", "price": "350 Bs", "image": "imagenes/ron_sol.png", "description": "Añejado en barrica de roble" },
+        { "name": "Jägermeister", "price": "350 Bs", "image": "imagenes/jjagger.png", "description": "Licor de hierbas alemán" }
+      ]
+    },
+    {
+      "id": "refrescos",
+      "title": "Refrescos",
+      "items": [
+        { "name": "COCA COLA  2L", "price": "30 Bs", "image": "imagenes/coca.png", "description": "El clásico refresco" },
+        { "name": "SPRITE  2L", "price": "30 Bs", "image": "imagenes/sprit.png", "description": "Refresco de lima limón" },
+	{ "name": "AGUA  2L", "price": "20 Bs", "image": "imagenes/agua.png", "description": "Agua natural" }
+      ]
+    }
+  ]
+}

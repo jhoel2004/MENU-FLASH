@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLASH | Menú Premium</title>
+    <meta name="description"
+        content="Menú digital premium - Bar y Discoteca FLASH. Cervezas, licores y cócteles selectos.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imagenes/logo.png" type="image/png">
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loading">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Background Effects -->
+    <div class="bg-effects">
+        <div class="bg-gradient bg-gradient-1"></div>
+        <div class="bg-gradient bg-gradient-2"></div>
+        <div class="bg-gradient bg-gradient-3"></div>
+    </div>
+    <div class="noise-overlay"></div>
+    <img src="imagenes/logo.png" alt="" class="watermark-logo" aria-hidden="true">
+
+    <!-- Sticky Navigation -->
+    <nav class="nav-sticky" id="navbar">
+        <div class="nav-container">
+            <img src="imagenes/logo.png" alt="FLASH Logo" class="nav-logo" id="nav-logo">
+            <ul class="nav-links">
+                <li><a href="#jarras" class="nav-link">Jarras</a></li>
+                <li><a href="#cervezas" class="nav-link">Cervezas</a></li>
+                <li><a href="#licores" class="nav-link">Tapados</a></li>
+                <li><a href="#refrescos" class="nav-link">Refrescos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+        <div class="logo-wrapper">
+            <div class="logo-glow"></div>
+            <img src="imagenes/logo.png" alt="FLASH Logo" class="logo-img" id="main-logo">
+        </div>
+
+        <div class="scroll-indicator" onclick="scrollToMenu()">
+            <span>Explorar Menú</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Spacer to push content down -->
+    <div class="hero-spacer"></div>
+
+    <!-- Search Button + Expandable Input -->
+    <div class="search-container" id="searchContainer">
+        <input type="text" id="searchInput" placeholder="Buscar bebida..." class="search-input">
+        <button class="search-toggle" id="searchToggle" aria-label="Buscar">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+        </button>
+    </div>
+
+    <!-- Menu Content -->
+    <main class="menu-wrapper" id="menu-container" style="position: relative; z-index: 10; background: transparent;">
+        <!-- Content will be injected by JavaScript -->
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <img src="imagenes/logo.png" alt="FLASH" class="footer-logo">
+        <div class="footer-divider"></div>
+        <p class="footer-text">© 2024 FLASH — Todos los derechos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
