@@ -1406,6 +1406,26 @@ body {
         width: 90px;
         height: 110px;
     }
+
+    /* Mobile: center cards and make them full-width */
+    .items-grid {
+        justify-content: center;
+        flex-wrap: wrap;
+        scroll-snap-type: none;
+        gap: 1rem;
+    }
+
+    .menu-card {
+        width: 90%;
+        max-width: 320px;
+        scroll-snap-align: center;
+    }
+
+    .combo-card {
+        width: 95%;
+        max-width: 350px;
+        margin: 0 auto;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1422,7 +1442,8 @@ body {
     }
 
     .menu-card {
-        width: 180px;
+        width: 88%;
+        max-width: 300px;
     }
 
     .menu-card.text-only .card-content {
@@ -1440,7 +1461,8 @@ body {
     }
 
     .item-price {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+        padding: 0.25rem 0.75rem;
     }
 }
 

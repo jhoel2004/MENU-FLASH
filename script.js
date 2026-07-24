@@ -539,12 +539,14 @@ function initSearch() {
         }
     });
 
-    // Close on Escape
+    // Close on Escape or Enter (to dismiss keyboard on mobile)
     searchInput.addEventListener('keydown', (e) => {
         if (e.key === 'Escape') {
             searchContainer.classList.remove('active');
             searchInput.value = '';
             searchInput.dispatchEvent(new Event('input'));
+        } else if (e.key === 'Enter') {
+            searchInput.blur(); // Close keyboard on mobile
         }
     });
 
